@@ -1,0 +1,89 @@
+.chiropractic {
+  .information {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+}
+.start-block {
+  position: relative;
+  grid-column-start: 2;
+  grid-column-end: 7;
+
+  &__media {
+    margin: 105px 0 129px 0;
+    display: flex;
+    width: 150px;
+    height: 30px;
+  }
+  &__picture {
+    background: url(./img/1.png);
+    z-index: 2;
+    position: absolute;
+    width: 296px;
+    height: 567px;
+    left: 607px;
+    top: 140px;
+    top: -10px;
+  }
+  &__picture-vector {
+    background: url(./img/Vectormain.png) no-repeat;
+    z-index: -1;
+    position: absolute;
+    width: 560px;
+    height: 504px;
+    left: 507px;
+    top: 12px;
+  }
+  &__main-shadow {
+    background: url(./img/Ellipse.png);
+    z-index: 2;
+    position: absolute;
+    width: 226px;
+    height: 31px;
+    left: 707px;
+    top: 617px;
+  }
+  &__main-shadow-picture {
+    background: url(./img/Ellipsemain.png);
+    z-index: -1;
+    position: absolute;
+    width: 432px;
+    height: 59.68px;
+    left: 580px;
+    top: 607px; 
+  }
+  h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 67px;
+    letter-spacing: 1px;
+  }
+  p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+  }
+  .social {
+    background: url("./img/Sprite_b.png") no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 300px 500px;
+  }
+  .shape {
+    background-position: 0 -65px;
+  }
+  .inst {
+    background-position: -30px -65px;
+  }
+  .twitter {
+    background-position: -60px -65px;
+  }
+  .facebook {
+    background-position: -90px -65px;
+  }
+}

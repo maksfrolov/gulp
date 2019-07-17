@@ -1,0 +1,20 @@
+//Импорт общих стилей
+@import "./components/common";
+
+//Импорт шрифтов
+@import "./components/fonts";
+
+//Импорт стилей страниц
+@import "./pages/index";
+@import "./pages/contacts";
+
+
+//Импорт компонентов для страниц
+@import "./components/header";
+@import "./components/footer";
+@import "./components/buttons";
+@import "./components/infoblocks/chiropractic";
+@import "./components/infoblocks/treatment";
+@import "./components/infoblocks/services";
+@import "./components/infoblocks/advantages";
+@import "./components/infoblocks/doctor";

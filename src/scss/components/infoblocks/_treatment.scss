@@ -1,0 +1,32 @@
+.treatment {
+  .information {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+}
+.section-one {
+  display: flex;
+  &__picture {
+    background-image: url(./img/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 540px;
+    height: 440px;
+  }
+  &__text {
+    width: 580px;
+    height: 538px;
+  }
+  &__title {
+    
+    width: 580px;
+    height: 324px;
+  }
+  .strip {
+    margin-top: 180px;
+  }
+  p {
+    margin: 0;
+  }
+}

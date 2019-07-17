@@ -1,0 +1,41 @@
+.header {
+  &__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 65px;
+    padding: 40px 0 75px 0;
+  }
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__logo {
+    display: flex;
+  }
+  &__info {
+    display: flex;
+  }
+  &__number {
+    font-style: normal;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 0 30px 0 0;
+  }
+  .spine {
+    background: url("./img/Sprite_b.png");
+    width: 221.07px;
+    height: 65.68px;
+    background-size: 300px 500px;
+    margin-right: 78.93px;
+  }
+  a {
+    text-align: center;
+    font-size: 13px;
+    line-height: 18px;
+    margin-right: 30px;
+    text-decoration: none;
+  }
+}
