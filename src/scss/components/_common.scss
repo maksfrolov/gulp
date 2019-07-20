@@ -17,6 +17,7 @@
 }
 body {
   a {
+    text-transform: uppercase;
     color: #3a4959;
     text-decoration: none;
     font-family: "Open Sans";
@@ -26,7 +27,10 @@ body {
     line-height: 18px;
   }
   a:hover {
-    color: #3a4959;
+    text-transform: uppercase;
+    transition: 0.8s;
+    color:black;
+    opacity: 0.8;
     text-decoration: none;
   }
   .container {
@@ -34,12 +38,23 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 110px;
+
+    @media (max-width: 1024px) {
+      padding: 0 35px;
+    }
+    @media (max-width: 767px) {
+      padding: 0 20px;
+    }
   }
-  .strip {
-    width: 110px;
-    height: 5px;
-    background: #056cde;
-    border-radius: 10px;
-    margin-bottom: 30px;
+  .h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  p {
+    margin: 0;
   }
 }

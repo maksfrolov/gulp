@@ -1,89 +1,91 @@
 .chiropractic {
-  .information {
+  &__block {
+    @media (max-width: 767px) {
+      padding: 0 20px;
+      grid-template-columns: repeat(1fr 4fr);
+    }
+    padding: 50px 0 50px 0;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
+    grid-column-gap: 20px;
   }
-}
-.start-block {
-  position: relative;
-  grid-column-start: 2;
-  grid-column-end: 7;
-
-  &__media {
-    margin: 105px 0 129px 0;
-    display: flex;
-    width: 150px;
-    height: 30px;
+  &__info {
+    grid-column-start: 2;
+    grid-column-end: 7;
   }
-  &__picture {
-    background: url(./img/1.png);
-    z-index: 2;
-    position: absolute;
-    width: 296px;
-    height: 567px;
-    left: 607px;
-    top: 140px;
-    top: -10px;
-  }
-  &__picture-vector {
-    background: url(./img/Vectormain.png) no-repeat;
-    z-index: -1;
-    position: absolute;
-    width: 560px;
-    height: 504px;
-    left: 507px;
-    top: 12px;
-  }
-  &__main-shadow {
-    background: url(./img/Ellipse.png);
-    z-index: 2;
-    position: absolute;
-    width: 226px;
-    height: 31px;
-    left: 707px;
-    top: 617px;
-  }
-  &__main-shadow-picture {
-    background: url(./img/Ellipsemain.png);
-    z-index: -1;
-    position: absolute;
-    width: 432px;
-    height: 59.68px;
-    left: 580px;
-    top: 607px; 
-  }
-  h1 {
+  &__title {
+    margin: 0;
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
     font-size: 58px;
     line-height: 67px;
     letter-spacing: 1px;
+    padding-bottom: 30px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 110px;
+      height: 5px;
+      background: #056cde;
+      top: -35px;
+      border-radius: 10px;
+    }
   }
-  p {
+  &__text {
+    margin: 0;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 29px;
+    padding-bottom: 30px;
   }
-  .social {
-    background: url("./img/Sprite_b.png") no-repeat;
+  .social-media {
+    grid-column: 2/3;
+    margin-top: -150px;
+    display: flex;
+    width: 150px;
     height: 30px;
-    width: 30px;
-    background-size: 300px 500px;
   }
-  .shape {
-    background-position: 0 -65px;
+  &__block-picture {
+    position: relative;
+    grid-row-start: 1;
+    grid-column-start: 7;
+    grid-column-end: 13;
+    width: 560px;
+    height: 653.68px;
   }
-  .inst {
-    background-position: -30px -65px;
+  &__picture {
+    z-index: -1;
+    position: absolute;
+    width: 296px;
+    height: 567px;
   }
-  .twitter {
-    background-position: -60px -65px;
+  &__picture-vector {
+    z-index: -2;
+    position: absolute;
+    width: 560px;
+    height: 504px;
   }
-  .facebook {
-    background-position: -90px -65px;
-  }
+}
+
+.social {
+  background: url("./img/Sprite_b.png") no-repeat;
+  height: 30px;
+  width: 30px;
+  background-size: 300px 500px;
+}
+.shape {
+  background-position: 0 -65px;
+}
+.inst {
+  background-position: -30px -65px;
+}
+.twitter {
+  background-position: -60px -65px;
+}
+.facebook {
+  background-position: -90px -65px;
 }
