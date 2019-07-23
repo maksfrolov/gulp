@@ -1,0 +1,11 @@
+.doctor {
+  &__block {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+  &__photo {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+}

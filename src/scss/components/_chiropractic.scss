@@ -4,7 +4,7 @@
       padding: 0 20px;
       grid-template-columns: repeat(1fr 4fr);
     }
-    padding: 50px 0 50px 0;
+    padding: 14px 0 0 7px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 20px;
@@ -34,13 +34,13 @@
     }
   }
   &__text {
+    max-width:480px;
     margin: 0;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 29px;
-    padding-bottom: 30px;
   }
   .social-media {
     grid-column: 2/3;
@@ -58,20 +58,24 @@
     height: 653.68px;
   }
   &__picture {
+    top: -75px;
+    left: 55px;
     z-index: -1;
     position: absolute;
     width: 296px;
     height: 567px;
   }
   &__picture-vector {
+    top: -55px;
+    left: -32px;
     z-index: -2;
     position: absolute;
     width: 560px;
     height: 504px;
   }
 }
-
 .social {
+  margin: 4px 10px 0 0;
   background: url("./img/Sprite_b.png") no-repeat;
   height: 30px;
   width: 30px;

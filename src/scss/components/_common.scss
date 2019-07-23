@@ -16,6 +16,7 @@
   line-height: $height + px;
 }
 body {
+  box-sizing: border-box;
   a {
     text-transform: uppercase;
     color: #3a4959;
