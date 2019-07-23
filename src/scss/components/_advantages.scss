@@ -6,9 +6,6 @@
     }
     padding-top: 100px;
   }
-  &__main-title {
-    padding-bottom: 20px;
-  }
   &__main-text {
     font-family: Open Sans;
     font-style: normal;
@@ -20,7 +17,7 @@
     padding-left: 100px;
     grid-column-start: 2;
     grid-column-end: 8;
-    width: 580px;
+    width: 660px;
   }
   &__info-block {
     padding: 30px 40px 12px 60px;
@@ -29,19 +26,19 @@
     min-height: 145px;
     margin: 0 25px 40px 45px;
     position: relative;
-    background: #bab5e4;
     box-shadow: 0px 0px 40px rgba(118, 157, 202, 0.15);
     border-radius: 10px;
   }
   &__awards-block {
-    margin-top: 50px;
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
+    grid-gap: 15px;
     grid-column-start: 2;
     grid-column-end: 12;
   }
   &__main-title {
+    padding-bottom: 20px;
     position: relative;
     font-family: "Montserrat";
     font-style: normal;
@@ -58,6 +55,66 @@
       top: -35px;
       border-radius: 10px;
     }
+  }
+  &__main-text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+  }
+  &__text {
+    padding-top: 7px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__box-card {
+    position: relative;
+    width: 70px;
+    z-index: 2;
+  }
+  &__card-one {
+    background: url(./img/Sprite_b.png) no-repeat;
+    background-size: 300px 500px;
+    background-position: 0 -185px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 38px;
+    left: -45px;
+  }
+  &__card-two {
+    background: url(./img/Sprite_b.png) no-repeat;
+    background-size: 300px 500px;
+    background-position: -72px -185px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 38px;
+    left: -45px;
+  }
+  &__card-three {
+    background: url(./img/Sprite_b.png) no-repeat;
+    background-size: 300px 500px;
+    background-position: -144px -185px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 28px;
+    left: -45px;
+  }
+  &__card-four {
+    background: url(./img/Sprite_b.png) no-repeat;
+    background-size: 300px 500px;
+    background-position: -216px -185px;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 28px;
+    left: -45px;
   }
   .one {
     grid-column-start: 2;
@@ -82,14 +139,6 @@
     font-size: 18px;
     line-height: 21px;
     color: #3a4959;
-    margin: 0;
-  }
-  p {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
     margin: 0;
   }
 }

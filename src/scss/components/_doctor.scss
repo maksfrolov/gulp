@@ -1,11 +1,45 @@
 .doctor {
   &__block {
+    position: relative;
+    margin-top: 70px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
   }
   &__photo {
-    grid-column-start: 2;
+    grid-row: 1/1;
+    grid-column-start: 1;
     grid-column-end: 12;
+  }
+  &__about {
+    margin-top: 63px;
+    grid-row: 2/1;
+    grid-column-start: 7;
+    grid-column-end: 13;
+  }
+  &__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: 1px;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 110px;
+      height: 5px;
+      background: #056cde;
+      top: 27px;
+      border-radius: 10px;
+    }
+  }
+  &__text {
+    margin-top: 20px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
   }
 }
