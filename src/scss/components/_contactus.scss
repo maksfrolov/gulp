@@ -4,9 +4,13 @@
       padding: 0 20px;
       grid-template-columns: repeat(1fr 4fr);
     }
+    @media (max-width: 1024px) {
+      padding: 0 35px;
+    }
     margin-top: 123px;
+    margin-bottom: 150px;
     background: #FFCE51;
-    height: 440px;
+    height: 900px;
     border-radius: 10px 10px 0px 0px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -56,6 +60,7 @@
   &__map{
     grid-column-start: 1;
     grid-column-end: 13;
+    grid-row: 3/3;
     width: 100%;
     height: 900px;
     background:url(./img/map.png) no-repeat;

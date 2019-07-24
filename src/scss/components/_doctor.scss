@@ -4,6 +4,9 @@
       padding: 0 20px;
       grid-template-columns: repeat(1fr 4fr);
     }
+    @media (max-width: 1024px) {
+      padding: 0 35px;
+    }
     position: relative;
     margin-top: 70px;
     display: grid;
