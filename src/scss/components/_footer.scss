@@ -1,0 +1,52 @@
+.footer {
+  &__block {
+  
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+  &__block-top {
+      grid-column-start: 1;
+      grid-column-end: 13;
+  }
+&__block-bot {
+    grid-column-start: 1;
+    grid-column-end: 13;
+}
+  &__point {
+    background: url(img/Sprite_b.png) no-repeat;
+    background-position: -120px -68px;
+    background-size: 300px;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+    margin-left: 3px;
+    margin-bottom: 20px;
+  }
+  &__social-media {
+    grid-column: 2/3;
+    margin-top: -150px;
+    display: flex;
+    width: 150px;
+    height: 30px;
+  }
+  .social {
+    margin: 4px 10px 0 0;
+    background: url("./img/Sprite_b.png") no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 300px 500px;
+  }
+  .shape {
+    background-position: 0 -65px;
+  }
+  .inst {
+    background-position: -30px -65px;
+  }
+  .twitter {
+    background-position: -60px -65px;
+  }
+  .facebook {
+    background-position: -90px -65px;
+  }
+}

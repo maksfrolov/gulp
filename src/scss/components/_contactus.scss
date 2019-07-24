@@ -1,5 +1,9 @@
 .Contact {
   &__block {
+    @media (max-width: 767px) {
+      padding: 0 20px;
+      grid-template-columns: repeat(1fr 4fr);
+    }
     margin-top: 123px;
     background: #FFCE51;
     height: 440px;
