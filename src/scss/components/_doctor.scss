@@ -1,4 +1,5 @@
 .doctor {
+  background: rgb(250, 246, 246);
   &__block {
     @media (max-width: 767px) {
       padding: 0 20px;
@@ -8,10 +9,11 @@
       padding: 0 35px;
     }
     position: relative;
-    margin-top: 70px;
+    padding-top: 150px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
+    z-index: 1;
   }
   &__photo {
     grid-row: 1/1;
@@ -37,12 +39,12 @@
       width: 110px;
       height: 5px;
       background: #056cde;
-      top: 27px;
+      top: 180px;
       border-radius: 10px;
     }
   }
   &__text {
-    margin-top: 20px;
+    padding-top: 30px;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;

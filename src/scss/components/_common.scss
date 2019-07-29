@@ -26,13 +26,17 @@ body {
     font-weight: normal;
     font-size: 13px;
     line-height: 18px;
+    margin: 0;
   }
   a:hover {
     text-transform: uppercase;
-    transition: 0.8s;
-    color:black;
-    opacity: 0.8;
+    transition: 0.5s;
+    color: red($color: #000000);
+    opacity: 0.5;
     text-decoration: none;
+  }
+  a:active {
+    color: rgb(103, 145, 221);
   }
   .container {
     color: #3a4959;

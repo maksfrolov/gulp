@@ -1,4 +1,5 @@
 .footer {
+  background: rgb(250, 246, 246);
   &__block {
     @media (max-width: 767px) {
       padding: 0 20px;
@@ -6,19 +7,26 @@
     }
     @media (max-width: 1024px) {
       padding: 0 35px;
-    }  
+    }
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
+    padding: 100px 0 50px 0;
+  }
+  &__contact-top {
+    display: flex;
   }
   &__block-top {
-      grid-column-start: 1;
-      grid-column-end: 13;
-  }
-&__block-bot {
+    display: flex;
+    justify-content: space-between;
     grid-column-start: 1;
     grid-column-end: 13;
-}
+  }
+  &__block-bot {
+    grid-row: 2/2;
+    grid-column-start: 1;
+    grid-column-end: 13;
+  }
   &__point {
     background: url(img/Sprite_b.png) no-repeat;
     background-position: -120px -68px;
@@ -27,14 +35,42 @@
     width: 22px;
     height: 22px;
     margin-left: 3px;
-    margin-bottom: 20px;
   }
   &__social-media {
     grid-column: 2/3;
-    margin-top: -150px;
     display: flex;
+    justify-content: space-around;
     width: 150px;
     height: 30px;
+  }
+  &__information {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 20px;
+  }
+  &__information-company {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  &__work-time {
+    grid-column-start: 4;
+    grid-column-end: 8;
+  }
+  &__company-rating {
+    grid-column-start: 9;
+    grid-column-end: 13;
+  }
+  &__point-block {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  &__text-right {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 10px;
+  }
+  &__text-left{
+    padding-top: 5px;
   }
   .social {
     margin: 4px 10px 0 0;
@@ -54,5 +90,19 @@
   }
   .facebook {
     background-position: -90px -65px;
+  }
+  p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+  }
+  h3 {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 23px;
   }
 }

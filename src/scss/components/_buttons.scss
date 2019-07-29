@@ -1,6 +1,5 @@
 .header__button {
-  width: 210px;
-  height: 40px;
+  padding: 10px 25px;
   font-style: normal;
   font-weight: bold;
   font-size: 13.4px;
@@ -11,13 +10,19 @@
   color: #3a4959;
   background: #ffce51;
   border-radius: 10px;
+  :hover{
+    opacity:0.5;
+  }
+  :active{
+    background: blue;
+  }
   @media (max-width: 1024px) {
     display: none;
   }
 }
 .chiropractic__button {
-  width: 310px;
   padding: 15px;
+  max-width: 310px;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
@@ -30,12 +35,13 @@
   color: #ffffff;
   background: #056cde;
   border-radius: 10px;
-  margin-top: 32px;
+  :active{
+    background: blue;
+  }
 }
 .treatment__button {
-  margin-top: 35px;
-  width: 210px;
-  height: 40px;
+  max-width: 210px;
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,9 +54,12 @@
   color: #3a4959;
   background: #ffce51;
   border-radius: 10px;
-  margin-bottom: 100px;
+  :active{
+    background: blue;
+  }
 }
 .Contact__button {
+  padding: 10px 5px 10px 45px;
   background: #056cde;
   border-radius: 10px;
   font-family: "Open Sans";
@@ -58,11 +67,27 @@
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  :active{
+    background: blue;
+  }
+}
+.footer__button {
+  margin-left: 35px;
+  padding: 10px 65px 10px 65px;
+  background: #ffce51;
+  border-radius: 10px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
   display: flex;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  width: 310px;
-  height: 50px;
-  color: #ffffff;
+  :active{
+    background-color:  blue;
+  }
 }

@@ -1,4 +1,5 @@
 .chiropractic {
+  background: rgb(250, 246, 246);
   &__block {
     @media (max-width: 767px) {
       padding: 0 20px;
@@ -7,7 +8,7 @@
     @media (max-width: 1024px) {
       padding: 0 35px;
     }
-    padding: 14px 0 0 7px;
+    padding-top: 100px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 20px;
@@ -37,13 +38,18 @@
     }
   }
   &__text {
-    max-width:480px;
-    margin: 0;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    max-width: 480px;
+    margin-right: 0;
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 29px;
+    padding-bottom: 30px;
   }
   &__social-media {
     grid-column: 2/3;
@@ -57,16 +63,15 @@
     grid-row-start: 1;
     grid-column-start: 7;
     grid-column-end: 13;
-    width: 560px;
-    height: 653.68px;
+    height: 650px;
+    z-index: 0;
   }
   &__picture {
     top: -75px;
     left: 55px;
     z-index: -1;
     position: absolute;
-    width: 296px;
-    height: 567px;
+    box-shadow: (15.5px at 50% 50%, rgba(20, 71, 127, 0.08) 0%, rgba(85, 120, 152, 0) 100%);
   }
   &__picture-vector {
     top: -55px;
@@ -76,23 +81,26 @@
     width: 560px;
     height: 504px;
   }
-}
-.social {
-  margin: 4px 10px 0 0;
-  background: url("./img/Sprite_b.png") no-repeat;
-  height: 30px;
-  width: 30px;
-  background-size: 300px 500px;
-}
-.shape {
-  background-position: 0 -65px;
-}
-.inst {
-  background-position: -30px -65px;
-}
-.twitter {
-  background-position: -60px -65px;
-}
-.facebook {
-  background-position: -90px -65px;
+  p {
+    margin: 0;
+  }
+  .social {
+    margin: 4px 10px 0 0;
+    background: url("./img/Sprite_b.png") no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 300px 500px;
+  }
+  .shape {
+    background-position: 0 -65px;
+  }
+  .inst {
+    background-position: -30px -65px;
+  }
+  .twitter {
+    background-position: -60px -65px;
+  }
+  .facebook {
+    background-position: -90px -65px;
+  }
 }
