@@ -8,6 +8,7 @@
     @media (max-width: 1024px) {
     }
     @media (max-width: 767px) {
+      padding-top:  20px;
       grid-template-columns: repeat(4, 1fr);
       grid-column-start: 1;
       grid-column-end: 4;
