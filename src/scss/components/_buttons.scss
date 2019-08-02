@@ -23,7 +23,6 @@
   }
 }
 .chiropractic__button {
-  
   white-space: nowrap;
   padding: 10px 75px;
   font-family: "Open Sans";
@@ -40,6 +39,19 @@
   }
   @media (max-width: 1023px) {
     padding: 10px 55px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
+    display: block;
   }
 }
 .treatment__button {
@@ -56,6 +68,20 @@
   border-radius: 10px;
   :active {
     background: blue;
+  }
+  @media (max-width: 1023px) {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
   }
 }
 .Contact__button {
@@ -74,6 +100,22 @@
   :active {
     background: blue;
   }
+  @media (max-width: 1023px) {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  @media (max-width: 768px) {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 .footer__button {
   white-space: nowrap;
@@ -88,5 +130,23 @@
   text-transform: uppercase;
   :active {
     background-color: blue;
+  }
+  @media (max-width: 1023px) {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  @media (max-width: 768px) {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
   }
 }

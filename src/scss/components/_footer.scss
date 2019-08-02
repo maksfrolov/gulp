@@ -1,17 +1,12 @@
 .footer {
   background: rgb(250, 246, 246);
   &__block {
-    @media (max-width: 767px) {
-      padding: 0 20px;
-      grid-template-columns: repeat(1fr 4fr);
+    @media (max-width: 768px) {
+      padding-top: 20px;
     }
     @media (max-width: 1023px) {
-      padding: 0 35px;
     }
-    padding: 100px 0 50px 0;
-  }
-  &__contact-top {
-    display: flex;
+    padding-top: 100px;
   }
   &__block-top {
     display: flex;
@@ -19,8 +14,20 @@
     grid-column-start: 1;
     grid-column-end: 13;
     padding-bottom: 20px;
+    @media (max-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
   }
-
+  &__contact-top {
+    display: flex;
+    @media (max-width: 768px) {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+  }
   &__point {
     background: url(img/Sprite_b.png) no-repeat;
     background-position: -120px -68px;
@@ -36,11 +43,20 @@
     justify-content: space-around;
     width: 150px;
     height: 30px;
+    @media (max-width: 768px) {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      margin-bottom: 30px;
+    }
   }
   &__block-bot {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 20px;
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
   &__information-company {
     grid-column-start: 1;
@@ -48,6 +64,11 @@
     @media (max-width: 1023px) {
       grid-column-start: 1;
       grid-column-end: 6;
+    }
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 25px;
     }
   }
   &__work-time {
@@ -59,21 +80,39 @@
       grid-row: 2/2;
       margin-top: -50px;
     }
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
   }
   &__company-rating {
     grid-column-start: 9;
     grid-column-end: 13;
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
   }
   &__point-block {
     padding-top: 10px;
     display: flex;
     flex-direction: row-reverse;
+    @media (max-width: 768px) {
+      flex-direction: row-reverse;
+      padding-top: 25px;
+    }
   }
   &__text-right {
     text-align: end;
     @media (max-width: 1023px) {
       font-size: 15px;
       line-height: 25px;
+    }
+    @media (max-width: 768px) {
+      text-align: start;
+      padding-bottom: 10px;
     }
   }
   &__text-left {
@@ -82,10 +121,25 @@
       font-size: 15px;
       line-height: 25px;
     }
+    @media (max-width: 768px) {
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
   }
-  &__link{
+  &__links-top {
+    @media (max-width: 768px) {
+      grid-column-start: 1;
+      grid-column-end: 5;
+      padding-bottom: 30px;
+    }
+  }
+  &__link {
     padding-right: 15px;
+    @media (max-width: 768px) {
+      padding-right: 10px;
+    }
   }
+
   .social {
     margin: 4px 10px 0 0;
     background: url("./img/Sprite_b.png") no-repeat;

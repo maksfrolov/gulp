@@ -1,15 +1,17 @@
 .services {
   background: rgb(250, 246, 246);
   &__block {
-    @media (max-width: 767px) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-    @media (max-width: 1024px) {
-    }
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 20px;
     padding-top: 150px;
+    @media (max-width: 1024px) {
+    }
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
   }
   &__Chiropractic {
     margin-top: 32px;
@@ -44,6 +46,7 @@
   &__about {
     padding: 30px 50px 40px 40px;
     @media (max-width: 768px) {
+      padding: 0;
     }
   }
   &__main-title {
@@ -71,6 +74,9 @@
       line-height: 25px;
       grid-column-start: 2;
       grid-column-end: 5;
+    }
+    @media (max-width: 767px) {
+      grid-column-start: 1;
     }
   }
   &__title {
@@ -109,6 +115,9 @@
       top: 1600px;
       z-index: 0;
     }
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
   &__links {
     @media (max-width: 768px) {
@@ -122,6 +131,7 @@
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
+      padding: 13px 0 16px 20px;
       line-height: 21px;
       display: inline-block;
     }
