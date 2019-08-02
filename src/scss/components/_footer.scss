@@ -5,12 +5,9 @@
       padding: 0 20px;
       grid-template-columns: repeat(1fr 4fr);
     }
-    @media (max-width: 1024px) {
+    @media (max-width: 1023px) {
       padding: 0 35px;
     }
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 20px;
     padding: 100px 0 50px 0;
   }
   &__contact-top {
@@ -21,12 +18,9 @@
     justify-content: space-between;
     grid-column-start: 1;
     grid-column-end: 13;
+    padding-bottom: 20px;
   }
-  &__block-bot {
-    grid-row: 2/2;
-    grid-column-start: 1;
-    grid-column-end: 13;
-  }
+
   &__point {
     background: url(img/Sprite_b.png) no-repeat;
     background-position: -120px -68px;
@@ -43,7 +37,7 @@
     width: 150px;
     height: 30px;
   }
-  &__information {
+  &__block-bot {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: 20px;
@@ -51,26 +45,46 @@
   &__information-company {
     grid-column-start: 1;
     grid-column-end: 4;
+    @media (max-width: 1023px) {
+      grid-column-start: 1;
+      grid-column-end: 6;
+    }
   }
   &__work-time {
     grid-column-start: 4;
     grid-column-end: 8;
+    @media (max-width: 1023px) {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row: 2/2;
+      margin-top: -50px;
+    }
   }
   &__company-rating {
     grid-column-start: 9;
     grid-column-end: 13;
   }
   &__point-block {
+    padding-top: 10px;
     display: flex;
     flex-direction: row-reverse;
   }
   &__text-right {
-    display: flex;
-    flex-direction: row-reverse;
-    padding-top: 10px;
+    text-align: end;
+    @media (max-width: 1023px) {
+      font-size: 15px;
+      line-height: 25px;
+    }
   }
-  &__text-left{
+  &__text-left {
     padding-top: 5px;
+    @media (max-width: 1023px) {
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+  &__link{
+    padding-right: 15px;
   }
   .social {
     margin: 4px 10px 0 0;

@@ -2,11 +2,9 @@
   background: rgb(250, 246, 246);
   &__block {
     @media (max-width: 767px) {
-      padding: 0 20px;
       grid-template-columns: repeat(1fr 4fr);
     }
     @media (max-width: 1024px) {
-      padding: 0 35px;
     }
     display: flex;
     align-items: center;
@@ -19,6 +17,7 @@
     align-items: center;
   }
   .hamburger {
+    z-index: 2;
     width: 26px;
     height: 18px;
     display: none;
@@ -38,6 +37,7 @@
     display: flex;
   }
   &__link {
+    white-space: nowrap;
     text-align: center;
     font-size: 13px;
     line-height: 18px;
@@ -58,7 +58,7 @@
     font-weight: bold;
     font-size: 16px;
     line-height: 22px;
-    @media (max-width: 1024px) {
+    @media (max-width: 1231px) {
       display: none;
     }
     font-style: normal;

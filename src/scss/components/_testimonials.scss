@@ -2,11 +2,9 @@
   background: rgb(250, 246, 246);
   &__block {
     @media (max-width: 767px) {
-      padding: 0 20px;
       grid-template-columns: repeat(1fr 4fr);
     }
-    @media (max-width: 1024px) {
-      padding: 0 35px;
+    @media (max-width: 1023px) {
     }
     padding-top: 140px;
     display: grid;
@@ -79,6 +77,10 @@
     font-size: 16px;
     line-height: 26px;
     padding-bottom: 10px;
+    @media (max-width: 1023px) {
+      font-size: 15px;
+      line-height: 25px;
+    }
   }
   &__title {
     font-family: "Open Sans";
@@ -126,7 +128,8 @@
     width: 8px;
     height: 8px;
   }
-  &__bcg{
+  &__bcg {
+    display: none;
     position: absolute;
     width: 590px;
     left: 0;

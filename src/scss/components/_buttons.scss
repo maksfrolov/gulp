@@ -1,19 +1,21 @@
 .header__button {
+  white-space: nowrap;
   padding: 10px 25px;
   font-style: normal;
   font-weight: bold;
   font-size: 13.4px;
   line-height: 18px;
   display: flex;
+  text-transform: uppercase;
   justify-content: center;
   align-items: center;
   color: #3a4959;
   background: #ffce51;
   border-radius: 10px;
-  :hover{
-    opacity:0.5;
+  :hover {
+    opacity: 0.5;
   }
-  :active{
+  :active {
     background: blue;
   }
   @media (max-width: 1024px) {
@@ -21,30 +23,28 @@
   }
 }
 .chiropractic__button {
-  padding: 15px;
-  max-width: 310px;
-  font-family: Open Sans;
+  
+  white-space: nowrap;
+  padding: 10px 75px;
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 22px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   text-transform: uppercase;
   color: #ffffff;
   background: #056cde;
   border-radius: 10px;
-  :active{
+  :active {
     background: blue;
+  }
+  @media (max-width: 1023px) {
+    padding: 10px 55px;
   }
 }
 .treatment__button {
-  max-width: 210px;
-  padding: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  white-space: nowrap;
+  padding: 10px 75px;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: bold;
@@ -54,12 +54,14 @@
   color: #3a4959;
   background: #ffce51;
   border-radius: 10px;
-  :active{
+  :active {
     background: blue;
   }
 }
 .Contact__button {
-  padding: 10px 5px 10px 45px;
+  display: inline-block;
+  white-space: nowrap;
+  padding: 10px 25px;
   background: #056cde;
   border-radius: 10px;
   font-family: "Open Sans";
@@ -69,13 +71,13 @@
   line-height: 22px;
   text-transform: uppercase;
   color: #ffffff;
-  :active{
+  :active {
     background: blue;
   }
 }
 .footer__button {
-  margin-left: 35px;
-  padding: 10px 65px 10px 65px;
+  white-space: nowrap;
+  padding: 10px 55px;
   background: #ffce51;
   border-radius: 10px;
   font-family: "Open Sans";
@@ -83,11 +85,8 @@
   font-weight: bold;
   font-size: 13px;
   line-height: 18px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   text-transform: uppercase;
-  :active{
-    background-color:  blue;
+  :active {
+    background-color: blue;
   }
 }
