@@ -2,15 +2,13 @@
   background: rgb(250, 246, 246);
   &__block {
     @media (max-width: 767px) {
-      grid-template-columns: repeat(1fr 4fr);
-    }
-    @media (max-width: 768px) {
       display: none;
+      grid-template-columns: repeat(1fr 4fr);
     }
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: 20px;
-    padding: 62px 0 45px 0;
+    padding: 85px 0 75px 0;
   }
   &__info {
     max-width: 540px;
@@ -28,7 +26,7 @@
     z-index: 1;
     grid-column-start: 7;
     grid-column-end: 13;
-    padding-top: 70px;
+    padding-top: 100px;
   }
   &__title {
     padding: 20px 0 20px 0;
@@ -56,7 +54,7 @@
     letter-spacing: 1px;
   }
   &__text {
-    padding-bottom: 30px;
+    padding-bottom: 45px;
     font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
